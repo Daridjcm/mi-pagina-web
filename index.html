@@ -4,15 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sobre Mí</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Presentación</h1>
         <h2>Dariana De Jesús Correa Medina</h2>
-        <p>
-            El proposito de esta página web es demostrar mi capacidad de usar
-            las herramientas de HTML, CSS y Git.
-        </p>
-        <img src="./Dariana.jpg" alt="Foto de Dariana" />
+        <div class="info">
+            <img src="./Dariana.jpg" alt="Foto de Dariana" />
+            <p>
+                El proposito de esta página web es demostrar mi capacidad de usar
+                las herramientas de HTML, CSS y Git.
+            </p>
+            <p>Mi nombre es Dariana, vivo en Santa Marta, Magdalena, Colombia.</p>
+        </div>
         <div class="redes">
             <a href="https://www.facebook.com/daridjcm/">Facebook</a>
             <a href="https://x.com/Daridjcm">X</a>
@@ -30,8 +34,8 @@
                 </ul>
             </div>
             <div class="tareas">
-                <ol>
                     <p>Tareas pendientes</p>
+                <ol>
                     <li>Terminar este sitio web esta noche.</li>
                     <li>Apagar la computadora.</li>
                     <li>Cepillarme los dientes.</li>
@@ -87,9 +91,10 @@
             <form>
                 <input type="text" placeholder="Ingresa tu nombre"/>
                 <input type="text" placeholder="Describe tu asunto"/>
-                <input type="email" placeholder="Ingresa tu correo electrónico"/>
+                <input type="email" id="emailInput" placeholder="Ingresa tu correo electrónico"/>
                 <input type="submit" value="Enviar">
             </form>
         </div>
+        <script src="./checkEmail.js"></script>
     </body>
 </html>
